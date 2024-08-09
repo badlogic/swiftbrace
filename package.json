@@ -1,0 +1,13 @@
+{
+  "name": "swiftbrace",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"esbuild src/*.ts --outdir=html --bundle --watch\" \"live-server html/\"",
+    "build": "esbuild src/*.ts --outdir=html --bundle"
+  },
+  "devDependencies": {
+    "esbuild": "0.23.0",
+    "concurrently": "8.2.2",
+    "live-server": "1.2.2"
+  }
+}
