@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
-blargh --in src --out html
+npm run build
 host=slayer.marioslab.io
-host_dir=/home/badlogic/swiftbrace.
+host_dir=/home/badlogic/swiftbrace
 current_date=$(date "+%Y-%m-%d %H:%M:%S")
 commit_hash=$(git rev-parse HEAD)
 echo "{\"date\": \"$current_date\", \"commit\": \"$commit_hash\"}" > html/version.json

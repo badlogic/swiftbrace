@@ -2,12 +2,18 @@
   "name": "swiftbrace",
   "version": "1.0.0",
   "scripts": {
-    "dev": "concurrently \"esbuild src/*.ts --outdir=html --bundle --watch\" \"live-server html/\"",
-    "build": "esbuild src/*.ts --outdir=html --bundle"
+    "dev": "concurrently \"esbuild src/*.ts --outdir=html --bundle --sourcemap=inline --watch\" \"live-server html/\"",
+    "build": "esbuild src/*.ts --outdir=html --bundle --sourcemap=inline"
   },
   "devDependencies": {
-    "esbuild": "0.23.0",
+    "@types/matter-js": "^0.19.7",
+    "@types/vara": "^1.1.4",
     "concurrently": "8.2.2",
+    "esbuild": "0.23.0",
     "live-server": "1.2.2"
+  },
+  "dependencies": {
+    "matter-js": "^0.20.0",
+    "vara": "^1.4.1"
   }
 }

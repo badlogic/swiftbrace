@@ -2,7 +2,7 @@
 
 set -e
 
-project=mariozechner-at
+project=swiftbrace
 
 printHelp () {
 	echo "Usage: control.sh <command>"
